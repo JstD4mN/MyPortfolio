@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio | J.D4mian</title>
+
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200;400;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* Body centrado */
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to bottom, #3d3d3d, #252525);
+      color: white;
+      font-family: 'Oxanium', sans-serif;
+    }
+
+    /* Caja principal */
+    .box {
+      background: #111111;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.6);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    /* Contenedor de imagen */
+    .container {
+      position: relative;
+      width: 300px;
+      overflow: hidden;
+      border-radius: 15px;
+    }
+
+    .container img {
+      width: 100%;
+      display: block;
+    }
+
+    /* Degradado */
+    .pepe {
+      mask-image: linear-gradient(to bottom, black 70%, transparent);
+    }
+
+    /* Texto sobre imagen */
+    .container h1 {
+      position: absolute;
+      bottom: 30px;
+      left: 60px;
+      margin: 0;
+      font-size: 28px;
+      color: white;
+    }
+
+    /* Texto normal */
+    p {
+      color: white;
+      text-align: center;
+      margin: 5px 0 0 0;
+    }
+
+    /* Botón con icono y texto */
+    .button {
+      background-color: #212121; 
+      color: white;
+      border: 2px solid white;
+      border-radius: 25px;
+      font-family: 'Oxanium', sans-serif;
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 16px;
+
+      display: flex;            /* flex para alinear icono y texto */
+      align-items: center;      /* centra verticalmente */
+      justify-content: center;  /* centra horizontalmente */
+      gap: 8px;                 /* espacio entre icono y texto */
+
+      margin: 10px auto 0 auto; 
+      width: 180px;
+      height: 50px;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .button:hover {
+      background-color: #353535; 
+      transform: scale(1.05); /* pequeño efecto al pasar el mouse */
+    }
+
+    .button:active {
+      background-color: #747474; 
+    }
+
+    /* Icono dentro del botón */
+    .btn-icon {
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="container">
+      <img class="pepe" src="https://i.postimg.cc/FKgr3kDs/b1eece4253b9242b34311f0eaf878559.jpg" />
+      <h1>@Jst._D4mN</h1><hr>
+    </div>
+
+    <p>Mis redes Sociales:</p>
+
+    <button class="button" onclick="window.location.href='https://www.instagram.com/j.d4mian?igsh=bTc1c2twY2wzdml2'">
+      <img src="https://i.postimg.cc/kGCrv7XQ/instagram-letter-white-logo-icon-ig-app-transparent-background-premium-social-media-design-for-digit.png" alt="Instagram" class="btn-icon">
+      <span>Instagram</span>
+    </button>
+
+    <button class="button" onclick="window.location.href='https://www.tiktok.com/@j.d4mn_xd?_r=1&_t=ZP-95MJsrpiynX'">
+      <img src="https://i.postimg.cc/BQchKxFX/Picsart-26-04-07-23-05-18-299.png" alt="TikTok" class="btn-icon">
+      <span>TikTok</span>
+    </button>
+
+    <button class="button" onclick="window.location.href='https://youtube.com/@j.d4mian?si=UtH3nLn5FJ9qJ7bJ'">
+      <img src="https://i.postimg.cc/GhJMykD2/Picsart-26-04-07-23-06-24-100.png" alt="Instagram" class="btn-icon">
+      <span>Youtube</span>
+    </button>
+
+    <button class="button" onclick="window.location.href='https://discord.gg/UfUn9kNPQ4'">
+      <img src="https://i.postimg.cc/SN7ZMW9p/Picsart-26-04-07-23-06-41-932.png" alt="Instagram" class="btn-icon">
+      <span>Discord</span>
+    </button>
+
+  </div>
+</body>
+</html>
